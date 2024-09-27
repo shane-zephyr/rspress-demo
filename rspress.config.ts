@@ -16,7 +16,9 @@ export default defineConfig({
 	title: "Zephyr Docs Demo",
 	description: "Rspack-based Static Site Generator",
 	icon: "/rspress-icon.png",
-	plugins: [zephyrRsbuildPlugin()],
+	builderConfig: {
+		plugins: [zephyrRsbuildPlugin()],
+	},
 	logo: {
 		light: "/rspress-light-logo.png",
 		dark: "/rspress-dark-logo.png",
